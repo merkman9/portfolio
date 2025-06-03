@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Jordan Mendelevitch</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Mendelevitch - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="site-header">
-        <h1 class="site-title">Jordan Mendelevitch</h1>
-        <p class="tagline">Photographer · Multimedia Artist · Musician · Curator</p>
-        <nav class="main-nav">
-            <ul>
+    <nav class="nav">
+        <div class="container nav-container">
+            <h1 class="logo"><a href="#home">Jordan Mendelevitch</a></h1>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li class="dropdown">
-                    <a href="#">Work</a>
-                    <ul class="dropdown-content">
-                        <li><a href="photo/index.html">Photo</a></li>
-                        <li><a href="music/index.html">Music</a></li>
-                        <li><a href="video/index.html">Video</a></li>
-                        <li><a href="performance-art/index.html">Performance Art</a></li>
-                        <li><a href="digital-design/index.html">Digital Design</a></li>
-                    </ul>
-                </li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </div>
+    </nav>
+    <header class="hero" id="home">
+        <div class="container">
+            <h2>Hello, I'm <span>Jordan</span></h2>
+            <p>Photographer · Multimedia Artist · Musician · Curator</p>
+        </div>
     </header>
-    <main class="content">
-        <section id="about" class="about-section">
-            <h2>About</h2>
-            <p>I'm a photographer, multimedia artist, musician, and event curator driven by curiosity and a passion for pushing creative boundaries. Since childhood, I’ve explored digital and physical art forms such as computer graphics and immersive installations that blend technology, sound, and light. My work often reimagines scale and perception, inviting audiences into surreal, sensory-rich environments. My recent projects, like Music for Ants, explore themes of cosmic insignificance through interactive projections and spatial audio. Whether building visuals from scratch or collaborating across disciplines, I’m interested in art that feels both otherworldly and deeply human, and creating experiences that alter perspective and transmit emotion without explanation.</p>
+    <main>
+        <section id="about" class="about container">
+            <h2>About Me</h2>
+            <p>I'm a photographer, multimedia artist, musician, and event curator driven by curiosity and a passion for pushing creative boundaries. My work blends technology, sound and light to create immersive, surreal experiences.</p>
         </section>
-        <section id="contact" class="contact-section">
+        <section id="portfolio" class="portfolio container">
+            <h2>Selected Works</h2>
+            <div class="grid">
+                <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                <img src="https://via.placeholder.com/400x300" alt="Project 4">
+                <img src="https://via.placeholder.com/400x300" alt="Project 5">
+                <img src="https://via.placeholder.com/400x300" alt="Project 6">
+            </div>
+        </section>
+        <section id="contact" class="contact container">
             <h2>Contact</h2>
-            <p>Feel free to reach out via email: <a href="mailto:merkaifx@gmail.com">merkaifx@gmail.com</a></p>
+            <form class="contact-form" action="mailto:merkaifx@gmail.com" method="get">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
-    <footer class="site-footer">
+    <footer class="footer">
         <p>© Jordan Mendelevitch · All rights reserved</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
