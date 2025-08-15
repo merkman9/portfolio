@@ -142,7 +142,7 @@ export default function Sidebar({ activeSection, onNavigate, isMobileMenuOpen, s
         {/* Social Links */}
         <div className="flex justify-center items-center gap-6 mt-auto">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/jordan-mendelevitch/"
             target="_blank"
             rel="noopener"
             aria-label="linkedin profile (opens in new tab)"
@@ -308,7 +308,7 @@ export default function Sidebar({ activeSection, onNavigate, isMobileMenuOpen, s
         {/* Social Links */}
         <div className="flex justify-center items-center gap-6 mt-auto">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/jordan-mendelevitch/"
             target="_blank"
             rel="noopener"
             aria-label="linkedin profile (opens in new tab)"
