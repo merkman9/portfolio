@@ -1,6 +1,6 @@
 [build]
-  publish = "dist"
-  command = "vite build"
+  publish = "dist/public"
+  command = "npm install && vite build"
 
 # Handle client-side routing
 [[redirects]]
